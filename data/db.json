@@ -1,0 +1,74 @@
+{
+  "pruducts": [
+    {
+      "id": 1,
+      "title": "Wireless Bluetooth Earbuds",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLzTOoNygmyYDPOf1L81vAqviFATcGQPqQ6g&s",
+      "price": 49.99,
+      "description": "High-quality wireless earbuds with noise cancellation and long battery life."
+    },
+    {
+      "id": 2,
+      "title": "Smartwatch Fitness Tracker",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV0nzKZsRE8bEQyK0JLqC0RmzWh35481xlhQ&s",
+      "price": 89.99,
+      "description": "A sleek smartwatch with heart rate monitoring, GPS, and waterproof design."
+    },
+    {
+      "id": 3,
+      "title": "Wireless Charging Pad",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5QqsTYGHhNF2vtiOoHALyVFfwhr4giO422A&s",
+      "price": 19.99,
+      "description": "Fast-charging wireless pad compatible with all Qi-enabled devices."
+    },
+    {
+      "id": 4,
+      "title": "Noise-Cancelling Headphones",
+      "image": "https://d1b5h9psu9yexj.cloudfront.net/57440/Anker-s-Soundcore-Space-One_20230829-151132_full.jpeg",
+      "price": 129.99,
+      "description": "Over-ear headphones with active noise cancellation and 30-hour battery life."
+    },
+    {
+      "id": 5,
+      "title": "Portable Bluetooth Speaker",
+      "image": "https://m.media-amazon.com/images/I/718yxonHN8L.jpg",
+      "price": 59.99,
+      "description": "Compact and waterproof Bluetooth speaker with rich sound quality."
+    },
+    {
+      "id": 6,
+      "title": "4K Ultra HD Smart TV",
+      "image": "https://res.cloudinary.com/sharp-consumer-eu/image/fetch/w_3000,f_auto/https://s3.infra.brandquad.io/accounts-media/SHRP/DAM/origin/bd538636-dcc1-11ec-a028-36d391ded592.jpg",
+      "price": 499.99,
+      "description": "55-inch 4K Ultra HD Smart TV with built-in streaming apps and voice control."
+    },
+    {
+      "id": 7,
+      "title": "Gaming Laptop",
+      "image": "https://irotime.com/wp-content/uploads/2024/09/gaming-laptops-2.jpg",
+      "price": 1299.99,
+      "description": "High-performance gaming laptop with RGB keyboard and dedicated GPU."
+    },
+    {
+      "id": 8,
+      "title": "Electric Coffee Grinder",
+      "image": "https://m.media-amazon.com/images/I/81C+zDr11iL.jpg",
+      "price": 34.99,
+      "description": "Compact electric coffee grinder with adjustable grind settings."
+    },
+    {
+      "id": 9,
+      "title": "Wireless Mechanical Keyboard",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh3Di6ZLeR3w_BAjNsVdqR8rYu3gexTULWVA&s",
+      "price": 79.99,
+      "description": "Wireless mechanical keyboard with customizable RGB lighting."
+    },
+    {
+      "id": 10,
+      "title": "Smart Home Security Camera",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIx9eYo9tP30UgifxEVkrmte0V2IEc-LR9Nw&s",
+      "price": 99.99,
+      "description": "1080p HD security camera with motion detection and two-way audio."
+    }
+  ]
+}
