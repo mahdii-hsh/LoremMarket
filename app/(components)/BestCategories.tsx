@@ -1,4 +1,6 @@
+"use client"
 import { ArrowCircleLeft, MenuBoard } from 'vuesax-icons-react'
+
 
 export default function BestCategories() {
 
@@ -36,10 +38,22 @@ export default function BestCategories() {
             </div>
             <div className="grid grid-cols-12 w-full p-6">
                 {/* Fixed column (not scrollable) */}
+                <button className='bg-slate-200 rounded-xl' onClick={(e) => {
 
+                    const elm = document.getElementById('thismis')
+                    // console.log(elm)
+                    console.log(elm?.scrollTop)
+                    console.log(elm?.scrollLeft)
+                    console.log(elm?.clientLeft)
+                    elm?.scrollBy({
+                        left: elm?.scrollLeft - 150,
+                        behavior: "smooth"
+                    })
+                }
+                }>hello</button>
                 {/* Scrollable columns container */}
-                <div className="col-span-12 overflow-x-auto [scrollbar-width:none]">
-                    <div className="inline-grid grid-cols-5 gap-4 min-w-max">
+                <div className="col-span-12 overflow-x-auto overflow-clip [scrollbar-width:none]" id='thismis'>
+                    <div className="inline-grid grid-cols-5 gap-4 min-w-max ">
                         {categories.map((item) => (
                             <div key={item.title} className='group w-52 h-72 justify-center bg-white border-blue-100 border rounded-xl'>
 
@@ -51,9 +65,12 @@ export default function BestCategories() {
 
                                 <span className='opacity-0 mt-20 group-hover:opacity-100 text-xs flex text-center px-2 group-hover:mt-11 rounded-xl text-blue-600 duration-700' style={{ fontFamily: "vazirBold" }}>بیش از هزاران محصول با کیفیت ایرانی و خارجی
                                 </span>
-                                
+
+
                             </div>
                         ))}
+
+
                     </div>
                 </div>
             </div>

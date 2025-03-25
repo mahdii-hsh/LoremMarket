@@ -5,11 +5,20 @@ import { CiSearch } from "react-icons/ci";
 import { useCartShoppingContext } from '../context/CartShoppingContext';
 import React from 'react';
 import { PiShoppingCart } from "react-icons/pi";
-import { ShoppingCart,Play } from 'vuesax-icons-react';
+import { ShoppingCart, LikeShapes, ArrowCircleLeft, HambergerMenu, Global, Buildings, Component } from 'vuesax-icons-react';
 export interface navLinkType {
     title: string,
     href: string,
-    iconSrc: string
+    iconSrc: string,
+    type: string
+}
+
+const iconComponents = {
+    menu: HambergerMenu,
+    blog: Global,
+    best: LikeShapes,
+    about: Buildings
+
 }
 
 const handleShowTotalQty = (totalQty: number): React.ReactNode => {
@@ -28,22 +37,26 @@ function Navbar() {
         {
             title: "دسته بندی کالاها",
             href: "/",
-            iconSrc: `<Play size="32" color="#FF8A65" variant="Outline"/>`
+            iconSrc: `<Play size="32" color="#FF8A65" variant="Outline"/>`,
+            type: "menu"
         },
         {
             title: "لورم وبلاگ",
             href: "/products",
-            iconSrc: "/icons/menu.svg"
+            iconSrc: "/icons/menu.svg",
+            type: "blog"
         },
         {
             title: "محبوب ترین ها",
             href: "/cart",
-            iconSrc: "/icons/menu.svg"
+            iconSrc: "/icons/menu.svg",
+            type: "best"
         },
         {
             title: "درباره ما",
             href: "/about",
-            iconSrc: "/icons/menu.svg"
+            iconSrc: "/icons/menu.svg",
+            type: "about"
         },
     ]
 
@@ -69,18 +82,22 @@ function Navbar() {
             </div>
 
 
-            <div className="grid grid-cols-12 justify-between h-16 content-center">
+            <div className="grid grid-cols-10 justify-between h-16 content-center">
                 <div className='col-span-2'></div>
 
-                {navLinks.map((item: navLinkType, index) => (
-                    <Link key={item.title} href={item.href}
-                        style={{ fontFamily: "vazirLight" }}
-                        className={`col-span-1 flex justify-center text-gray-400  hover:shadow-blue-300 hover:bg-blue-500 hover:text-white hover:shadow-md rounded-xl items-center h-full ${path === item.href ? "bg-blue-50" : ""}`}>
-                        <span className="transition-colors">
-                            {item.title}
-                        </span>
-                    </Link>
-                ))}
+                {navLinks.map((item: navLinkType, index) => {
+                    let Component = iconComponents[item.type]
+                    return (
+                        <Link key={item.title} href={item.href}
+                            style={{ fontFamily: "vazirLight" }}
+                            className={`group col-span-1 flex justify-center text-gray-400 duration-300 delay-75 hover:shadow-blue-300 hover:bg-blue-500 hover:text-white hover:shadow-md rounded-xl items-center h-full ${path === item.href ? "bg-blue-50" : ""}`}>
+                            <span className="transition-colors">
+                                <Component variant='Outline' className='group-hover:rotate-45 duration-300 inline mx-1 text-sm' />
+                                {item.title}
+                            </span>
+                        </Link>
+                    )
+                })}
 
                 <span className='ml-4 bg-slate-100 size-8 rounded-lg text-center flex items-center justify-center'>{handleShowTotalQty(getTotalQty)}</span>
             </div>
