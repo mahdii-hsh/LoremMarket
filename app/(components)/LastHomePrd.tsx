@@ -39,16 +39,16 @@ export default async function LastHomePrd() {
 
     return (
         <div className='container-fluid rounded-3xl'>
-            <div className='grid grid-cols-12 bg-blue-50 pb-9 rounded-3xl'>
+            <div className='grid grid-cols-5 sm:grid-cols-7 lg:grid-cols-9 2xl:grid-cols-12 bg-blue-50 pb-9 rounded-3xl'>
                 <div className='col-span-1'>
-                    <HomeHashtag className='size-12 mt-8 mr-6 flex bg-white p-3 rounded-xl' variant="Outline" />
+                    <HomeHashtag className='size-12 xl:size-14 2xl:size-12 mt-8 ms-6 xl:ms-10 flex bg-white p-3 rounded-xl' variant="Outline" />
                 </div>
-                <div className='col-span-3 content-center mt-8' style={{ fontFamily: "vazirBold" }}>
-                    <span className='text-blue-500'>آخرین</span> محصولات خانه و آشپزخانه
+                <div className='col-span-4 lg:col-span-3 2xl:col-span-4 content-center mt-8 ms-7 md:ms-4 2xl:text-lg' style={{ fontFamily: "vazirBold" }}>
+                    <span className='block text-blue-500 2xl:inline'>آخرین</span> محصولات خانه و آشپزخانه
                 </div>
 
-                <div className='col-start-9 col-span-3 '>
-                    <div className='flex justify-end'>
+                <div className='col-span-5 sm:col-start-3 lg:col-start-5 2xl:col-start-9 2xl:col-span-3 content-center'>
+                    <div className='flex justify-center 2xl:justify-end'>
                         <div className='mt-8 me-4 pe-2  flex content-center bg-white hover:bg-blue-500 hover:text-white transition-colors duration-200 delay-75 cursor-pointer rounded-xl'>
                             <ShoppingBag className='size-10 p-2' variant="Outline" />
                             <span className='text-sm content-center' style={{ fontFamily: "vazirLight" }}>مشاهده بیشتر...</span>

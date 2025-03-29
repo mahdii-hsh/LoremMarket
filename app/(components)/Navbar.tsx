@@ -71,7 +71,7 @@ function Navbar() {
 
                 </div>
                 <div className='col-start-9 flex justify-end content-center px-4 '>
-                    <ShoppingCart variant="Outline" className='text-blue-700 h-full ' />
+                    <ShoppingCart variant="Outline" className='text-blue-700 p-2 transition-all duration-75 delay-75 outline-blue-100 cursor-pointer outline hover:outline-4 w-10 h-full bg-white rounded-full' />
                 </div>
                 <div className='col-start-10 col-span-2 flex'>
                     <button className='w-36 h-full rounded-xl bg-white flex justify-center items-center' style={{ fontFamily: "vazirLight" }}>
@@ -90,9 +90,9 @@ function Navbar() {
                     return (
                         <Link key={item.title} href={item.href}
                             style={{ fontFamily: "vazirLight" }}
-                            className={`group col-span-1 flex justify-center text-gray-400 duration-300 delay-75 hover:shadow-blue-300 hover:bg-blue-500 hover:text-white hover:shadow-md rounded-xl items-center h-full ${path === item.href ? "bg-blue-50" : ""}`}>
+                            className={`group col-span-1 flex justify-center text-gray-400 duration-150 delay-75 hover:shadow-blue-300 hover:bg-blue-500 hover:text-white hover:shadow-md rounded-xl items-center h-full ${path === item.href ? "bg-blue-50" : ""}`}>
                             <span className="transition-colors">
-                                <Component variant='Outline' className='group-hover:rotate-45 duration-300 inline mx-1 text-sm' />
+                                <Component variant='Outline' className='duration-150 delay-75 inline mx-1 text-sm' />
                                 {item.title}
                             </span>
                         </Link>

@@ -21,3 +21,8 @@
   font-family: vazirMeduim;
   src: url(../public/vazirmatn-v33.003/fonts/webfonts/Vazirmatn-Medium.woff2);
 }
+
+@font-face {
+  font-family: vazirThin;
+  src: url(../public/vazirmatn-v33.003/fonts/webfonts/Vazirmatn-Thin.woff2);
+}

@@ -1,5 +1,4 @@
 import { HeartAdd, Hierarchy3, HierarchySquare } from "vuesax-icons-react"
-import ToolTip from "./HoverEvent/ToolTip"
 
 type TSpecs = {
     comfort: string,
@@ -71,25 +70,21 @@ const comoPrice = (str: string): string => {
 
     return str
 }
-export default function ProductItem({ product }: { product: TProductItem }) {
-    console.log(product)
+
+export default function DiscountProductItem({ product, discount }: { product: TProductItem, discount: number }) {
+
     return (
-        <div className='w-full  relative rounded-xl text-center border border-blue-100 h-72 content-center px-2'>
-
-            {/* <ToolTip text="افزودن به علاقه مندی ها" styleToolTip={{ backColor: "bg-blue-500", textColor: "text-white", radius: "3xl", position: "left" }}> */}
-            <HeartAdd className="absolute bg-blue-100 p-1 size-7 transition-all duration-300 delay-75 hover:bg-white hover:border hover:border-blue-100 hover:text-blue-600  rounded-full cursor-pointer top-3 start-5" />
-            {/* </ToolTip> */}
-
-            <Hierarchy3 className="absolute bg-blue-100 p-1 size-7 transition-all duration-300 delay-75 hover:bg-white hover:border hover:border-blue-100 hover:text-blue-600  rounded-full cursor-pointer top-3 start-1/4" />
-
-            {/* {product.images.map()} */}
-            <div className="size-32 inline-flex justify-center rounded-xl bg-blue-50 items-center cursor-pointer mt-8">
-                <img src={product.images[0]} alt="" className="w-5/6 transition-all duration-300 hover:w-full hover:rotate-3 " />
-            </div>
-            <p style={{ fontFamily: "vazirMeduim" }} className="text-xs mb-4 mt-8 pb-3 border-b border-blue-50">
+        <div className=' w-full h-full rounded-3xl bg-gray-50 text-center content-center px-2 cursor-pointer outline outline-0 outline-blue-500 transition duration-150 delay-75 hover:outline-2'>
+            <p style={{ fontFamily: "vazirMeduim" }} className="text-xs 2xl:h-1/2 2xl:pt-3">
                 {product.name}
             </p>
-            <p style={{ fontFamily: "vazirMeduim" }} className="text-blue-600 text-sm ">{comoPrice(convertPersianNum(product.price))} <span className="text-xs">تومان</span></p>
+
+            <p style={{ fontFamily: "vazirMeduim" }} className="text-gray-400 text-xs content-end">
+                <del>{comoPrice(convertPersianNum(product.price))}</del>
+            </p>
+
+            <p style={{ fontFamily: "vazirMeduim" }} className="text-blue-600 text-sm ">{comoPrice(convertPersianNum(((100 - discount) / 100) * (product.price)))} <span className="text-xs">تومان</span></p>
+            
         </div>
     )
 }
