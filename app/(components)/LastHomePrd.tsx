@@ -6,28 +6,7 @@ import ScrollBtn from './CLickEvent/ScrollBtn'
 
 export default async function LastHomePrd() {
 
-    const categories = [
-        {
-            title: "کالای دیجیتال",
-            imgSrc: "/img/DigitalCategory.jpg"
-        },
-        {
-            title: "آرایشی و بهداشتی",
-            imgSrc: "/img/BehdashtCategory.jpg"
-        },
-        {
-            title: "خانه و آشپزخانه",
-            imgSrc: "/img/HomeCategory.jpg"
-        },
-        {
-            title: "مد و پوشاک",
-            imgSrc: "/img/PooshakCategory.jpg"
-        },
-        {
-            title: "ورزش و سفر",
-            imgSrc: "/img/VarzeshCategory.jpg"
-        }
-    ]
+
 
 
     const data = await fetch("http://localhost:3001/products")

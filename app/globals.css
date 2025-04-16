@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: vazirExtraBold;
+  src: url(../public/vazirmatn-v33.003/fonts/webfonts/Vazirmatn-Black.woff2);
+}
+
+@font-face {
   font-family: vazirBold;
   src: url(../public/vazirmatn-v33.003/fonts/webfonts/Vazirmatn-Bold.woff2);
 }
@@ -18,8 +23,13 @@
 }
 
 @font-face {
-  font-family: vazirMeduim;
+  font-family: vazirMedium;
   src: url(../public/vazirmatn-v33.003/fonts/webfonts/Vazirmatn-Medium.woff2);
+}
+
+@font-face {
+  font-family: vazirRegular;
+  src: url(../public/vazirmatn-v33.003/fonts/webfonts/Vazirmatn-Regular.woff2);
 }
 
 @font-face {

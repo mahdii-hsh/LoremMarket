@@ -18,7 +18,6 @@ const scrollLeft = (id : string) => {
 
 const scrollRight = (id : string) => {
     const elm = document.getElementById(id)
-    console.log(elm?.scrollLeft)
     elm?.scrollBy({
         left: +200,
         behavior: "smooth"

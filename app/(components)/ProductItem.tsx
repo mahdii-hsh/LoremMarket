@@ -72,7 +72,6 @@ const comoPrice = (str: string): string => {
     return str
 }
 export default function ProductItem({ product }: { product: TProductItem }) {
-    console.log(product)
     return (
         <div className='w-full  relative rounded-xl text-center border border-blue-100 h-72 content-center px-2'>
 
@@ -86,10 +85,10 @@ export default function ProductItem({ product }: { product: TProductItem }) {
             <div className="size-32 inline-flex justify-center rounded-xl bg-blue-50 items-center cursor-pointer mt-8">
                 <img src={product.images[0]} alt="" className="w-5/6 transition-all duration-300 hover:w-full hover:rotate-3 " />
             </div>
-            <p style={{ fontFamily: "vazirMeduim" }} className="text-xs mb-4 mt-8 pb-3 border-b border-blue-50">
+            <p style={{ fontFamily: "vazirMedium" }} className="text-xs mb-4 mt-8 pb-3 border-b border-blue-50">
                 {product.name}
             </p>
-            <p style={{ fontFamily: "vazirMeduim" }} className="text-blue-600 text-sm ">{comoPrice(convertPersianNum(product.price))} <span className="text-xs">تومان</span></p>
+            <p style={{ fontFamily: "vazirMedium" }} className="text-blue-600 text-sm ">{comoPrice(convertPersianNum(product.price))} <span className="text-xs">تومان</span></p>
         </div>
     )
 }

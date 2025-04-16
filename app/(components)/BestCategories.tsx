@@ -24,13 +24,17 @@ export default function BestCategories() {
         {
             title: "ورزش و سفر",
             imgSrc: "/img/VarzeshCategory.jpg"
-        }
+        },
+        // {
+        //     title : "اسباب بازی، کودک و نوزاد",
+        //     imgSrc : "/img/BabyCategory.jpg"
+        // }
     ]
     return (
         <div className='container-fluid bg-gradient-to-b from-white to-blue-50 rounded-3xl'>
             <div className='grid grid-cols-5 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-9 xl:grid-cols-11 2xl:grid-cols-12'>
                 <div className='col-span-1'>
-                    <MenuBoard className='size-12 xl:size-14 2xl:size-12 mt-8 ms-6 xl:ms-10 flex bg-slate-100 p-3 rounded-xl' variant="Outline" />
+                    <MenuBoard className='size-12 xl:size-14 2xl:size-12 mt-8 ms-6 xl:ms-10 flex bg-slate-100 p-3 rounded-xl animate-bounce' variant="Outline" />
                 </div>
                 <div className='col-span-3 2xl:col-span-2 content-center ms-3 lg:ms-0 xl:ms-4 mt-8 lg:text-lg xl:text-xl 2xl:text-lg' style={{ fontFamily: "vazirBold" }}>
                     <span className='text-blue-500 '>برترین</span> دسته بندی ها

@@ -11,7 +11,6 @@
         "https://cdnfa.com/beruzkala/7f33/files/4075673.jpeg",
         "https://iranapple.co/wp-content/uploads/2021/10/89A9521B-666D-414B-B04C-72299D5E1495.png",
         "https://files.emalls.ir/files/products/automatic/715999/20cncflq_thumb3.jpg"
-
       ]
     },
     {
@@ -532,5 +531,265 @@
       "description": "کیسه خواب مناسب برای دمای تا -10 درجه",
       "images": []
     }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "راهنمای خرید بهترین لپ‌تاپ در سال 2024",
+      "category_id": 1,
+      "related_products": [
+        1,
+        3,
+        5
+      ],
+      "author": "محمد رضایی",
+      "publish_date": "1403-04-15",
+      "image": "https://afraa.shop/wp-content/uploads/2024/11/%D9%BE%D8%B1%D9%81%D8%B1%D9%88%D8%B4-%D8%AA%D8%B1%DB%8C%D9%86-%D9%84%D9%BE-%D8%AA%D8%A7%D9%BE-%D9%87%D8%A7%DB%8C-2024-1.webp",
+      "summary": "مقایسه کامل ویژگی‌های لپ‌تاپ‌های برندهای مختلف و نکات مهم برای خرید",
+      "content": "در این مقاله به بررسی تخصصی جدیدترین مدل‌های لپ‌تاپ پرداخته‌ایم...",
+      "tags": [
+        "الکترونیک",
+        "لپ‌تاپ",
+        "راهنمای خرید"
+      ],
+      "read_time": 8,
+      "comments" : []
+    },
+    {
+      "id": 2,
+      "title": "10 نکته برای نگهداری از لوازم خانگی",
+      "category_id": 2,
+      "related_products": [
+        11,
+        12,
+        14
+      ],
+      "author": "فاطمه محمدی",
+      "publish_date": "1403-03-22",
+      "image": "https://lkiran.com/wp-content/uploads/2020/04/MAINTENANCE-HOME-APPLINCES-fridge.jpg",
+      "summary": "روش‌های افزایش عمر مفید لوازم خانگی و نگهداری صحیح از آنها",
+      "content": "لوازم خانگی سرمایه‌های ارزشمند هر خانه‌ای هستند...",
+      "tags": [
+        "لوازم خانگی",
+        "نگهداری",
+        "تعمیرات"
+      ],
+      "read_time": 5,
+      "comments" : []
+    },
+    {
+      "id": 3,
+      "title": "ترندهای مد و پوشاک فصل پاییز 1403",
+      "category_id": 3,
+      "related_products": [
+        21,
+        22,
+        25
+      ],
+      "author": "الناز سبحانی",
+      "publish_date": "1403-06-30",
+      "image": "https://www.digistyle.com/mag/wp-content/uploads/2022/10/fall-style-1_1.jpg",
+      "summary": "بررسی جدیدترین استایل‌ها و رنگ‌های محبوب فصل پاییز",
+      "content": "هر فصل با خودش ترندهای جدیدی می‌آورد...",
+      "tags": [
+        "مد",
+        "پوشاک",
+        "ترند"
+      ],
+      "read_time": 6,
+      "comments" : []
+    },
+    {
+      "id": 4,
+      "title": "تمرینات ورزشی با دمبل در خانه",
+      "category_id": 4,
+      "related_products": [
+        32,
+        36
+      ],
+      "author": "امیرحسین کریمی",
+      "publish_date": "1403-02-10",
+      "image": "https://crossfit24.ir/wp-content/uploads/2024/03/best-gyms-in-bali-1160x773-1.jpg",
+      "summary": "برنامه تمرینی کامل با دمبل برای تناسب اندام در منزل",
+      "content": "برای داشتن بدنی متناسب نیازی به باشگاه رفتن نیست...",
+      "tags": [
+        "ورزش",
+        "تناسب اندام",
+        "تمرین خانگی"
+      ],
+      "read_time": 7,
+      "comments" : []
+    },
+    {
+      "id": 5,
+      "title": "خواص درمانی عسل طبیعی",
+      "category_id": 5,
+      "related_products": [
+        43
+      ],
+      "author": "دکتر زهرا احمدی",
+      "publish_date": "1403-05-18",
+      "image": "https://drhoney.net/wp-content/uploads/2023/04/31402pg.jpg",
+      "summary": "بررسی علمی خواص دارویی و درمانی عسل طبیعی",
+      "content": "عسل یکی از مفیدترین مواد غذایی در طبیعت است...",
+      "tags": [
+        "سلامتی",
+        "عسل",
+        "خواص درمانی"
+      ],
+      "read_time": 9,
+      "comments" : []
+    },
+    {
+      "id": 6,
+      "title": "وسایل ضروری برای سفرهای کوهنوردی",
+      "category_id": 6,
+      "related_products": [
+        42,
+        44,
+        50
+      ],
+      "author": "رضا نوروزی",
+      "publish_date": "1403-01-05",
+      "image": "https://basalam.com/blog/wp-content/uploads/2023/08/1-2.jpg",
+      "summary": "لیست کامل تجهیزات مورد نیاز برای یک سفر کوهنوردی ایمن",
+      "content": "کوهنوردی یکی از مفرح‌ترین فعالیت‌های طبیعت‌گردی است...",
+      "tags": [
+        "سفر",
+        "کوهنوردی",
+        "تجهیزات"
+      ],
+      "read_time": 1,
+      "comments" : []
+    }
+  ],
+  "product_reviews": [
+    {
+      "id": 1,
+      "product_id": 1,
+      "user_id": 101,
+      "user_name": "علی محمدی",
+      "rating": 5,
+      "date": "1403-05-15",
+      "title": "عالی و با کیفیت",
+      "comment": "لپ‌تاپ بسیار عالی با پردازنده فوق‌العاده سریع. صفحه نمایش واقعا خیره کننده است.",
+      "verified_purchase": true,
+      "likes": 24,
+      "dislikes": 2,
+      "attributes": {
+        "کیفیت ساخت": 5,
+        "ارزش خرید": 4,
+        "امکانات": 5
+      }
+    },
+    {
+      "id": 2,
+      "product_id": 1,
+      "user_id": 205,
+      "user_name": "فاطمه احمدی",
+      "rating": 4,
+      "date": "1403-04-22",
+      "title": "خوب اما گران",
+      "comment": "کیفیت عالی دارد ولی قیمت واقعا بالاست. اگر بودجه دارید پیشنهاد می‌کنم.",
+      "verified_purchase": true,
+      "likes": 12,
+      "dislikes": 0,
+      "attributes": {
+        "کیفیت ساخت": 5,
+        "ارزش خرید": 3,
+        "امکانات": 4
+      }
+    },
+    {
+      "id": 3,
+      "product_id": 11,
+      "user_id": 178,
+      "user_name": "رضا نوروزی",
+      "rating": 5,
+      "date": "1403-06-10",
+      "title": "یخچال فوق‌العاده",
+      "comment": "فضای داخلی بسیار بزرگ و طراحی زیبایی دارد. مصرف انرژی هم خیلی بهینه است.",
+      "verified_purchase": true,
+      "likes": 18,
+      "dislikes": 1,
+      "attributes": {
+        "ظرفیت": 5,
+        "مصرف انرژی": 5,
+        "طراحی": 4
+      }
+    },
+    {
+      "id": 4,
+      "product_id": 21,
+      "user_id": 89,
+      "user_name": "زهرا حسینی",
+      "rating": 3,
+      "date": "1403-03-05",
+      "title": "کیفیت متوسط",
+      "comment": "کاپشن گرم است اما دوختش چندان محکم نیست. برای قیمتی که دارد انتظار کیفیت بهتری داشتم.",
+      "verified_purchase": true,
+      "likes": 5,
+      "dislikes": 3,
+      "attributes": {
+        "گرمایش": 4,
+        "دوخت": 2,
+        "ارزش خرید": 3
+      }
+    },
+    {
+      "id": 5,
+      "product_id": 31,
+      "user_id": 302,
+      "user_name": "امیرحسین کریمی",
+      "rating": 5,
+      "date": "1403-07-18",
+      "title": "توپ حرفه‌ای",
+      "comment": "برای تمرینات حرفه‌ای عالی است. کیفیت ساخت واقعا بالا و دوام خوبی دارد.",
+      "verified_purchase": true,
+      "likes": 30,
+      "dislikes": 0,
+      "attributes": {
+        "کیفیت": 5,
+        "دوام": 5,
+        "ارزش خرید": 5
+      }
+    },
+    {
+      "id": 6,
+      "product_id": 41,
+      "user_id": 154,
+      "user_name": "نازنین صفری",
+      "rating": 4,
+      "date": "1403-02-28",
+      "title": "قهوه خوش عطر",
+      "comment": "عطر و طعم بسیار خوبی دارد اما کمی ترش است. به دوستداران قهوه اسپرسو پیشنهاد می‌شود.",
+      "verified_purchase": true,
+      "likes": 15,
+      "dislikes": 2,
+      "attributes": {
+        "عطر": 5,
+        "طعم": 4,
+        "بسته‌بندی": 4
+      }
+    },
+    {
+      "id": 7,
+      "product_id": 42,
+      "user_id": 267,
+      "user_name": "محسن رضایی",
+      "rating": 5,
+      "date": "1403-01-14",
+      "title": "چمدان مقاوم",
+      "comment": "در چند سفر خارجی از آن استفاده کردم و واقعا از کیفیت و مقاومت آن راضی هستم.",
+      "verified_purchase": true,
+      "likes": 22,
+      "dislikes": 0,
+      "attributes": {
+        "مقاومت": 5,
+        "کارایی": 5,
+        "قفل": 5
+      }
+    }
   ]
+
 }

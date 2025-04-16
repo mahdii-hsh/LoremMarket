@@ -14,6 +14,23 @@ export type TProductItem = {
     images: string[],
     description: string,
 }
+type TReviewAttr = {
+    [key: string]: number
+}
+export type TReview = {
+    id: 7,
+    product_id: 42,
+    user_id: 267,
+    user_name: string,
+    rating: 5,
+    date: string,
+    title: string,
+    comment: string,
+    verified_purchase: true,
+    likes: 22,
+    dislikes: 0,
+    attributes: TReviewAttr[]
+}
 const replaseAt = (str: string, index: number, replaceStr: string): string => {
     return str.substring(0, index) + replaceStr + str.substring(index + 1)
 }
@@ -71,20 +88,31 @@ const comoPrice = (str: string): string => {
     return str
 }
 
-export default function DiscountProductItem({ product, discount }: { product: TProductItem, discount: number }) {
+export default async function BuyerCommentItem({ comment }: { comment: TReview }) {
+
+    const data = await fetch('http://localhost:3001/products')
+    const products = await data.json()
+    const  product: TProductItem = products.filter((item: TProductItem) => {
+        return item.id == comment.product_id
+    })
+
+    // console.log(product)
 
     return (
-        <div className=' w-full h-full rounded-3xl bg-gray-50 text-center content-center px-2 cursor-pointer outline outline-0 outline-blue-500 transition duration-150 delay-75 hover:outline-2'>
-            <p style={{ fontFamily: "vazirMedium" }} className="text-xs 2xl:h-1/2 2xl:pt-3">
-                {product.name}
+        <div className=' w-full h-full rounded-3xl bg-white text-center content-center px-2 cursor-pointer outline outline-0 outline-blue-500 transition duration-150 delay-75 hover:outline-2'>
+            <p style={{ fontFamily: "vazirMeduim" }} className="text-xs 2xl:h-1/2 2xl:pt-3">
+                {comment.title}
+            </p>
+            <h1>{product.description}</h1>
+            <p className="text-black">{product.name}</p>
+            <h1>;slv</h1>
+
+            <p style={{ fontFamily: "vazirMeduim" }} className="text-gray-400 text-xs content-end">
+                <del>{comoPrice(convertPersianNum(comment.likes))}</del>
             </p>
 
-            <p style={{ fontFamily: "vazirMedium" }} className="text-gray-400 text-xs content-end">
-                <del>{comoPrice(convertPersianNum(product.price))}</del>
-            </p>
+            {/* <p style={{ fontFamily: "vazirMeduim" }} className="text-blue-600 text-sm ">{comoPrice(convertPersianNum(((100 - discount) / 100) * (product.price)))} <span className="text-xs">تومان</span></p> */}
 
-            <p style={{ fontFamily: "vazirMedium" }} className="text-blue-600 text-sm ">{comoPrice(convertPersianNum(((100 - discount) / 100) * (product.price)))} <span className="text-xs">تومان</span></p>
-            
         </div>
     )
 }
