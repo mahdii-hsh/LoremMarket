@@ -18,11 +18,16 @@ function MyLayout({ children }: ILayoutProps) {
 
     return (
         <div>
-            <Navbar />
-            <div className='container-fluid mt-4 rounded-b-[225px]'>
+            <div className='container-fluid rounded-b-[225px]'>
+                <div className='grid grid-cols-12 bg-blue-50'>
+                    <div className='col-start-2 col-span-10 2xl:col-start-3 2xl:col-span-8 '>
+                        <Navbar />
+                    </div>
+
+                </div>
                 <div className="grid grid-cols-12 bg-blue-50">
                     <div className="col-start-2 col-span-10 2xl:col-start-3 2xl:col-span-8 ">
-                        <BigSlider slides={['/img/big-slide-1.webp','/img/big-slide-2.webp','/img/DigitalCategory.jpg']}/>
+                        <BigSlider slides={['/img/big-slide-1.webp', '/img/big-slide-2.webp', '/img/DigitalCategory.jpg']} />
                     </div>
                     <div className="col-start-2 col-span-10 2xl:col-start-3 2xl:col-span-8 mt-6 ">
                         <BestCategories />
@@ -44,7 +49,7 @@ function MyLayout({ children }: ILayoutProps) {
                     <div className='col-start-12 col-span-1 bg-gradient-to-b from-blue-50 to-transparent rounded-tr-full'></div>
                 </div>
                 <div className="grid grid-cols-12 mt-20 gap-x-2">
-                <div className="col-start-2 col-span-10 2xl:col-start-3 2xl:col-span-4">
+                    <div className="col-start-2 col-span-10 2xl:col-start-3 2xl:col-span-4">
                         <HalfSlider />
                     </div>
                     <div className=" col-start-2 col-span-10 2xl:col-span-4">
@@ -74,10 +79,16 @@ function MyLayout({ children }: ILayoutProps) {
 
                 </div> */}
                 <div className="grid grid-cols-12 mt-20 ">
-                    <div className="col-start-3 col-span-8 mt-6 z-20">
+                    <div className="col-start-2 col-span-10 2xl:col-start-3 2xl:col-span-8 mt-6 z-20">
                         <Footer />
                     </div>
+                    <div className='col-span-full lg:col-start-4 lg:col-span-6 bg-blue-50 rounded-t-2xl h-16 2xl:h-16 content-center mt-3'>
+                        <p style={{ fontFamily: "vazirRegular" }} className='justify-center flex'>
+                            این قالب توسط مهدی هاشمی ساخته شده است
+                        </p>
+                    </div>
                 </div>
+
             </div>
         </div>
     )
