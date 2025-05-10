@@ -5,6 +5,7 @@ import { CiSearch } from "react-icons/ci";
 import { useCartShoppingContext } from '../context/CartShoppingContext';
 import React from 'react';
 import { ShoppingCart, LikeShapes, HambergerMenu, Global, Buildings, Menu, User, Shop } from 'vuesax-icons-react';
+import { GiHamburgerMenu } from 'react-icons/gi';
 export interface navLinkType {
     title: string,
     href: string,
@@ -65,7 +66,7 @@ function Navbar() {
             <div className='grid grid-cols-6 sm:grid-cols-8 lg:grid-cols-12 bg-blue-50 p-3 lg:py-8'>
                 <h1 className='col-span-2 lg:col-span-2 text-lg lg:text-center md:text-xl content-center' style={{ fontFamily: "vazirBold" }}>فروشگاه لورم</h1>
                 <div style={{ fontFamily: "vazirMedium" }} className='hidden text-lg lg:block lg:col-span-2 bg-blue-600 rounded-2xl content-center text-white px-4 mx-4 '>
-                    <span>دسته بندی</span>
+                    <span><GiHamburgerMenu className='inline me-2'/>دسته بندی</span>
                 </div>
                 <div className='relative col-span-4 sm:col-span-6 lg:col-span-4 transition-all duration-200'>
 
@@ -91,7 +92,7 @@ function Navbar() {
                 </div>
             </div>
             <div className='grid grid-cols-8 p-3 lg:hidden'>
-                <Menu className='col-span-3 size-14 bg-white p-4 rounded-2xl content-center' />
+                <GiHamburgerMenu className='col-span-3 size-14 bg-white p-4 rounded-2xl content-center' />
                 <div className='relative col-span-5 content-center sm:col-start-6 sm:col-span-3'>
                     <div >
                         <User className='relative size-10 z-20  outline outline-8 shadow-xl outline-white content-center inline-block rounded-full bg-blue-50 text-blue-500 p-2 ' />
